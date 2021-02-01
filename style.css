@@ -1,0 +1,90 @@
+/* Variabes */
+/* Mixin's */
+ body {
+     background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+/*	 background: #82d2e5;*/
+	 font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	 height: 100%;
+	 color: #fff;
+	 text-align: center;
+}
+ h1, h2 {
+	 font-family: 'Roboto', sans-serif;
+	 font-weight: 100;
+	 font-size: 2.6em;
+	 text-transform: uppercase;
+}
+ h3 {
+	 font-family: 'Roboto', sans-serif;
+	 font-weight: 100;
+	 font-size: 1.4em;
+	 text-transform: uppercase;
+}
+ #seconds, #tens {
+	 font-size: 2em;
+}
+
+ #container {
+	 width: 630px;
+	 margin: 10px auto;
+}
+ #container:after {
+	 content: "";
+	 display: table;
+	 clear: both;
+}
+ [data-view="card"] {
+	 transform: rotateY(180deg);
+	 width: 100px;
+	 height: 140px;
+	 border: solid 1px #d3cece;
+	 border-radius: 5px;
+	 float: left;
+	 margin: 10px;
+	 cursor: pointer;
+	 background: linear-gradient(135deg, #f3f3f3 22px, #fff 22px, #fff 24px, transparent 24px, transparent 67px, #fff 67px, #fff 69px, transparent 69px), linear-gradient(225deg, #f3f3f3 22px, #fff 22px, #fff 24px, transparent 24px, transparent 67px, #fff 67px, #fff 69px, transparent 69px) 0 64px;
+	 background-color: #f3f3f3;
+	 background-size: 64px 128px;
+}
+ .flipped {
+	 transition: 0.6s;
+	 transform-style: preserve-3d;
+	 position: relative;
+	 transform: rotateY(0deg);
+}
+ .reverse {
+	 transition: 0.6s;
+	 transform-style: preserve-3d;
+	 position: relative;
+	 transform: rotateY(180deg);
+}
+ .correct {
+	 opacity: 0.8;
+	 cursor: default;
+	 transform-style: preserve-3d;
+	 position: relative;
+	 transform: rotateY(0deg);
+}
+
+/* Icons */
+ .correct[data-item="sass"], .flipped[data-item="sass"] {
+	 background: url("./img/basketball.jpg") left center no-repeat #fff;
+	 background-size: contain;
+}
+ .correct[data-item="gulp"], .flipped[data-item="gulp"] {
+	 background: url("./img/football.jpg") left center no-repeat #fff;
+	 background-size: contain;
+}
+ .correct[data-item="grunt"], .flipped[data-item="grunt"] {
+	 background: url("./img/rugbe.JPG") left center no-repeat #fff;
+	 background-size: contain;
+}
+ .correct[data-item="git"], .flipped[data-item="git"] {
+	 background: url("./img/handball.JPG") left center no-repeat #fff;
+	 background-size: contain;
+}
+ .correct[data-item="css3"], .flipped[data-item="css3"] {
+	 background: url("./img/baseball.JPG") left center no-repeat #fff;
+	 background-size: contain;
+}
+ 
